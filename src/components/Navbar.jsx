@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link, animateScroll as scroll } from "react-scroll";
-
+import img1 from "../assets/cm1.png";
 import { MenuIcon, XIcon } from "@heroicons/react/outline";
 
 const Navbar = () => {
@@ -13,7 +13,12 @@ const Navbar = () => {
     <div className="w-screen h-[80px] z-10 bg-zinc-200 fixed drop-shadow-lg">
       <div className="px-2 flex justify-between items-center w-full h-full">
         <div className="flex items-center">
-          <h1 className="text-3xl font-bold mr-4 sm:text-4xl">BRAND.</h1>
+          <img
+            className="mr-4 h-[70px] sm:h-[80px] cursor-pointer"
+            src={img1}
+            alt="logo"
+          />
+
           <ul className="hidden md:flex">
             <li>
               <Link to="home" smooth={true} duration={500}>
