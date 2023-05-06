@@ -20,27 +20,27 @@ const Navbar = () => {
           />
 
           <ul className="hidden md:flex">
-            <li>
+            <li className="cursor-pointer">
               <Link to="home" smooth={true} duration={500}>
                 Home
               </Link>
             </li>
-            <li>
+            <li className="cursor-pointer">
               <Link to="about" smooth={true} offset={-200} duration={500}>
                 About
               </Link>
             </li>
-            <li>
+            <li className="cursor-pointer">
               <Link to="support" smooth={true} offset={-50} duration={500}>
                 Support
               </Link>
             </li>
-            <li>
+            <li className="cursor-pointer">
               <Link to="platforms" smooth={true} offset={-100} duration={500}>
                 Platforms
               </Link>
             </li>
-            <li>
+            <li className="cursor-pointer">
               <Link to="pricing" smooth={true} offset={-50} duration={500}>
                 Pricing
               </Link>
@@ -59,13 +59,20 @@ const Navbar = () => {
       </div>
 
       <ul className={!nav ? "hidden" : "absolute bg-zinc-200 w-full px-8"}>
-        <li className="border-b-2 border-zinc-300 w-full">
-          <Link onClick={handleClose} to="home" smooth={true} duration={500}>
+        <li className="border-b-2 border-zinc-300 w-full p-0 hover:bg-indigo-200">
+          <Link
+            className="inline-block w-[100%] p-2"
+            onClick={handleClose}
+            to="home"
+            smooth={true}
+            duration={500}
+          >
             Home
           </Link>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full">
+        <li className="border-b-2 border-zinc-300 w-full p-0 hover:bg-indigo-200">
           <Link
+            className="inline-block w-[100%] p-2"
             onClick={handleClose}
             to="about"
             smooth={true}
@@ -75,8 +82,9 @@ const Navbar = () => {
             About
           </Link>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full">
+        <li className="border-b-2 border-zinc-300 w-full p-0 hover:bg-indigo-200">
           <Link
+            className="inline-block w-[100%] p-2"
             onClick={handleClose}
             to="support"
             smooth={true}
@@ -86,8 +94,9 @@ const Navbar = () => {
             Support
           </Link>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full">
+        <li className="border-b-2 border-zinc-300 w-full p-0 hover:bg-indigo-200">
           <Link
+            className="inline-block w-[100%] p-2"
             onClick={handleClose}
             to="platforms"
             smooth={true}
@@ -97,8 +106,9 @@ const Navbar = () => {
             Platforms
           </Link>
         </li>
-        <li className="border-b-2 border-zinc-300 w-full">
+        <li className="border-b-2 border-zinc-300 w-full p-0 hover:bg-indigo-200">
           <Link
+            className="inline-block w-[100%] p-2"
             onClick={handleClose}
             to="pricing"
             smooth={true}
